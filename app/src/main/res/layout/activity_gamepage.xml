@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gameplaybackground"
+    tools:context=".Gamepage">
+
+    <!--  skip, levelboard, and hint -->
+    <RelativeLayout
+        android:id="@+id/topbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/skip"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:background="@drawable/skip"
+            android:padding="10dp" />
+
+        <TextView
+            android:id="@+id/levelboard"
+            android:layout_width="280dp"
+            android:layout_height="70dp"
+            android:layout_toRightOf="@+id/skip"
+            android:background="@drawable/level_board"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="30dp" />
+
+        <ImageView
+            android:id="@+id/hint"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_toRightOf="@+id/levelboard"
+            android:background="@drawable/hint"
+            android:padding="10dp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/topbar">
+
+        <TextView
+            android:id="@+id/puzzeleboard"
+            android:layout_width="match_parent"
+            android:layout_height="350dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="20dp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_below="@+id/puzzeleboard" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/blackbox"
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="50dp"
+        android:background="#000">
+
+        <RelativeLayout
+            android:id="@+id/firstrow"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_margin="10dp">
+
+            <TextView
+                android:id="@+id/taxtview"
+                android:layout_width="200dp"
+                android:layout_height="match_parent"
+                android:background="@color/white"
+                android:textColor="@color/black"
+                android:textSize="25dp" />
+
+            <TextView
+                android:id="@+id/delete"
+                android:layout_width="80dp"
+                android:layout_height="match_parent"
+                android:layout_toRightOf="@+id/taxtview"
+                android:background="@drawable/delete" />
+
+            <TextView
+                android:id="@+id/submit"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_toRightOf="@+id/delete"
+                android:background="@drawable/button"
+                android:gravity="center"
+                android:text="SUBMIT"
+                android:textColor="@color/white"
+                android:textSize="17dp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:layout_below="@+id/firstrow">
+
+            <Button
+                android:id="@+id/one"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="1dp"
+                android:layout_marginLeft="1dp"
+                android:layout_marginTop="1dp"
+                android:layout_marginEnd="1dp"
+                android:layout_marginBottom="1dp"
+                android:background="@drawable/button"
+                android:text="1"
+                android:textColor="@color/white"
+                android:textSize="25dp" />
+
+            <Button
+                android:id="@+id/two"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_toRightOf="@+id/one"
+                android:background="@drawable/button"
+                android:layout_margin="1dp"
+                android:text="2"
+                android:textColor="@color/white"
+                android:textSize="25dp" />
+
+            <Button
+                android:id="@+id/three"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_margin="1dp"
+                android:layout_toRightOf="@+id/two"
+                android:background="@drawable/button"
+                android:text="3"
+                android:textColor="@color/white"
+                android:textSize="25dp" />
+
+            <Button
+                android:id="@+id/four"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_margin="1dp"
+                android:layout_toRightOf="@+id/three"
+                android:background="@drawable/button"
+                android:text="4"
+                android:textColor="@color/white"
+                android:textSize="25dp" />
+
+            <Button
+                android:id="@+id/five"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_margin="1dp"
+                android:layout_toRightOf="@+id/four"
+                android:background="@drawable/button"
+                android:text="5"
+                android:textColor="@color/white"
+                android:textSize="25dp" />
+
+            <Button
+                android:id="@+id/six"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_margin="1dp"
+                android:layout_toRightOf="@+id/five"
+                android:background="@drawable/button"
+                android:text="6"
+                android:textColor="@color/white"
+                android:textSize="25dp" />
+
+
+            <Button
+                android:id="@+id/seven"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_margin="1dp"
+                android:layout_toRightOf="@+id/six"
+                android:background="@drawable/button"
+                android:text="7"
+                android:textColor="@color/white"
+                android:textSize="25dp" />
+
+            <Button
+                android:id="@+id/eight"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_margin="1dp"
+                android:layout_toRightOf="@+id/seven"
+                android:background="@drawable/button"
+                android:text="8"
+                android:textColor="@color/white"
+                android:textSize="25dp" />
+
+            <Button
+                android:id="@+id/nine"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_margin="1dp"
+                android:layout_toRightOf="@+id/eight"
+                android:background="@drawable/button"
+                android:text="9"
+                android:textColor="@color/white"
+                android:textSize="25dp" />
+
+            <Button
+                android:id="@+id/zero"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_margin="1dp"
+                android:layout_toRightOf="@+id/nine"
+                android:background="@drawable/button"
+                android:text="0"
+                android:textColor="@color/white"
+                android:textSize="25dp" />
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+
+        <com.google.android.gms.ads.AdView
+            xmlns:ads="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/adView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            ads:adSize="BANNER"
+            ads:adUnitId="ca-app-pub-3940256099942544/6300978111">
+        </com.google.android.gms.ads.AdView>
+
+</RelativeLayout>

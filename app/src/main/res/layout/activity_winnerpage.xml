@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".Winnerpage">
+
+    <TextView
+        android:id="@+id/wintext"
+        android:textColor="#2539A3"
+        android:textSize="30dp"
+        android:layout_marginTop="50dp"
+        android:textAlignment="center"
+        android:text="PUZZLE"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"/>
+
+    <ImageView
+        android:id="@+id/trophyImageView"
+        android:src="@drawable/wintrophy"
+        android:layout_width="wrap_content"
+        android:layout_height="300dp"
+        android:layout_below="@+id/wintext"
+        android:layout_centerHorizontal="true"/>
+
+    <Button
+        android:id="@+id/wincontinue"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/trophyImageView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginBottom="4dp"
+        android:background="@drawable/buttonofwin"
+        android:text="CONTINUE"
+        android:textSize="30dp" />
+
+    <Button
+        android:id="@+id/winmainmanu"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/wincontinue"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginBottom="4dp"
+        android:background="@drawable/buttonofwin"
+        android:text="MAIN MENU"
+        android:textSize="30dp" />
+
+    <Button
+        android:id="@+id/buyProButton"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/winmainmanu"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginBottom="4dp"
+        android:background="@drawable/buttonofwin"
+        android:text="BUY PRO"
+        android:textSize="30dp" />
+
+    <TextView
+        android:id="@+id/shareTextView"
+        android:textColor="#2539A3"
+        android:text="SHARE THIS PUZZLE"
+        android:textSize="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_below="@+id/buyProButton"
+        android:layout_centerHorizontal="true"/>
+
+    <RelativeLayout
+        android:id="@+id/shareLinearLayout"
+        android:layout_gravity="center"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/shareTextView"
+        android:layout_centerHorizontal="true">
+
+        <TextView
+            android:background="@drawable/share"
+            android:layout_width="50dp"
+            android:layout_height="50dp"/>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>
